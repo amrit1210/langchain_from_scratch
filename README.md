@@ -10,11 +10,13 @@ source .venv/bin/activate
 
 pip install -r requirements.txt
 cp .env.example .env
+```
 
 ## Start Jupyter
 
 ```bash
 jupyter notebook
+```
 
 
 ### First notebook (`01_langchain_basics.ipynb`)
@@ -30,3 +32,4 @@ llm = ChatOpenAI(model="gpt-4.1-mini")
 response = llm.invoke("Explain LangChain in one paragraph")
 
 print(response.content)
+```
